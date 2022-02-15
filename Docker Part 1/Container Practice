@@ -1,0 +1,22 @@
+Exercise 1.1: Getting Started
+❯ docker container ls -a
+CONTAINER ID   IMAGE               COMMAND                  CREATED          STATUS                     PORTS                NAMES
+2f1b35108619   ubuntu              "bash"                   6 minutes ago    Exited (0) 2 minutes ago                        compassionate_dewdney
+8c0ab55cd07a   ubuntu              "bash"                   7 minutes ago    Exited (0) 7 minutes ago                        hungry_montalcini
+72b77c42dff0   nginx               "/docker-entrypoint.…"   31 minutes ago   Up 31 minutes              80/tcp               hopeful_snyder
+d8caa10b6c03   docker101tutorial   "/docker-entrypoint.…"   3 weeks ago      Exited (255) 3 weeks ago   0.0.0.0:80->80/tcp   docker-tutorial
+f5c63808d563   alpine/git          "git clone https://g…"   3 weeks ago      Exited (0) 3 weeks ago                          repo
+
+❯ docker ps -a
+CONTAINER ID   IMAGE               COMMAND                  CREATED          STATUS                     PORTS                NAMES
+72b77c42dff0   nginx               "/docker-entrypoint.…"   42 minutes ago   Up 42 minutes              80/tcp               hopeful_snyder
+d8caa10b6c03   docker101tutorial   "/docker-entrypoint.…"   3 weeks ago      Exited (255) 3 weeks ago   0.0.0.0:80->80/tcp   docker-tutorial
+f5c63808d563   alpine/git          "git clone https://g…"   3 weeks ago      Exited (0) 3 weeks ago                          repo
+
+Exercise 1.2: Cleanup
+❯ docker image ls
+REPOSITORY   TAG       IMAGE ID       CREATED        SIZE
+
+❯ docker container ls
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+
