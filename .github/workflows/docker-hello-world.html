@@ -1,0 +1,21 @@
+<---# name: Docker Container (running Hello World!) - execute walk through can be used on local machine with Docker and Powershell
+
+
+#Containers are instances of images. Images are frozen on the container prior to deployment.
+#find your docker images, as a list--->
+<code>docker image ls</code>
+
+<---#dockerfile is your recipe and looks a bit like this--->
+<code>
+  FROM <image>:<tag>
+
+RUN <install some dependencies>
+
+  CMD <command that is executed on `docker container run`>
+  </code>
+
+<---find your containers, as a list--->
+  <code>docker container ls -a</code>
+
+<---now remove hello-world. if you have a lot of containers; try--->
+<code>docker container ls -a | grep hello-world</code>
