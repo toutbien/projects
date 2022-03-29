@@ -16,12 +16,12 @@ def countdown():
     launchTime = datetime(2022, 6, 1)
     currentTime = datetime.now()
     diff = launchTime - currentTime
-    numberOfMilliseconds = int(diff.total_seconds() * 1000)
+    numberOfDays = diff.days
 
-    return render_template(
-        "countdown.html",
-        time=numberOfMilliseconds
-    )
+   return render_template(
+      "countdown.html",
+      time=numberOfDays
+   )
     
 @app.route('/favicon.ico')
 def favicon():
